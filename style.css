@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+
+}
+#navbar {
+  display: inline;
+  width: 100%;
+  position: fixed;
+  padding: 20px;
+  text-align: right;
+  color: #2c3e50;
+  background-color: #F0E7EC;
+
+
+
+}
+.nav-link {
+  text-decoration: none;
+  padding: 20px;
+  font-size: 20px;
+  color: #2d3436;
+
+}
+li {
+    display: inline;
+
+  }
+#navbar {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+
+}
+
+#welcome-section, #contact, #about, #projects, #contact, #footer {
+  font-family: 'Barlow', sans-serif;
+  background-color: #F0E7EC;
+  color: #000;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: center;
+  width: 100%;
+  line-height: 2em;
+
+}
+#welcome-section {
+  height: 95vh;
+  background-image: linear-gradient(to bottom, #F0E7EC, transparent 95%),
+                    url("laptop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height: 2em;
+  padding-top: 300px
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: lighter;
+}
+#projects {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-size: 20px;
+  padding-top: 30px;
+  height: 95vh;
+  background-image: linear-gradient(to bottom, #F0E7EC, transparent 95%),
+                    url("laptop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+li.projects {
+  padding: 20px;
+}
+.twitter {
+  display: inline;
+}
+#button {
+  padding: 10px 30px;
+  background-color: #F7A3C9;
+  border-radius: 5px;
+
+}
+
+
+
+@media(max-height:800px) {
+  navbar{
+    font-size: 10px;
+    }
+ .course-list {
+   display: block;
+   text-align: left;
+
+  }
+  #footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
