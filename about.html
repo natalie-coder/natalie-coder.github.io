@@ -1,40 +1,51 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,200&family=Dosis&display=swap" rel="stylesheet">
-    <title>Portfolio page</title>
-  </head>
-  <body>
-<nav id="navbar">
-  <ul>
-    <li><a class="nav-link"href="index.html">Welcome</a></li>
-    <li><a class="nav-link"href="projects.html">Projects</a></li>
-    <li><a class="nav-link"href="contact.html">Contact</a></li>
-    <li><a class="nav-link"href="about.html">About</a></li>
-  </ul>
-</nav>
-<section id="about"><strong>About</strong>
-  <!-- replace first paragraph with 2nd paragraph Javascript-->
-    <p id = "firstPara">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-     <a href="javascript:void(0);" onClick="expandPara();">Click for more.</a>
-   </p>
 
-   <script>
-   function expandPara() {
-     var expandedParagraph = "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-    document.getElementById("firstPara").innerHTML = expandedParagraph;
-  }
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,200&family=Dosis&display=swap"
+    rel="stylesheet">
+  <title>Portfolio page</title>
+</head>
 
-  </script>
-</section>
-<footer id="footer">
- Natalie &copy; 2020
-</footer>
-  </body>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a class="nav-link" href="index.html">Welcome</a></li>
+      <li><a class="nav-link" href="projects.html">Projects</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <section id="about"><strong>About</strong>
+    <!-- replace first paragraph with 2nd paragraph Javascript-->
+    <p id="firstPara">
+      Hi and welcome to my Portfolio site! As you can see its a work in progress, I have used it to display some
+      projects that I have been working on and also to practice new JavaScript techniques that I am learning as I go
+      along.<br>
+      I am currently a full time Mum to my three year old son and have been learning to code since April 2020 at the
+      start of the Covid-19 pandemic.<br>
+      I am really enjoying it and would love to develop it further into a career, I have previously worked as a dentist
+      and would like to be able to use my new coding skills to develop apps and technology potentially within
+      healthcare.
+
+
+
+      <a href="javascript:void(0);" onClick="expandPara();">Click for more info.</a>
+    </p>
+
+    <script>
+      function expandPara() {
+        var expandedParagraph = "To be continued!";
+        document.getElementById("firstPara").innerHTML = expandedParagraph;
+      }
+
+    </script>
+  </section>
+  <footer id="footer">
+    Natalie &copy; 2020
+  </footer>
+</body>
+
 </html>
