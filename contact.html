@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,200&family=Dosis&display=swap" rel="stylesheet">
-    <title>Portfolio page</title>
-  </head>
-  <body>
-<nav id="navbar">
-  <ul>
-    <li><a class="nav-link"href="index.html" onMouseover="this.style.color = 'green';">Welcome</a></li> <!-- Javascript changing colour-->
-    <li><a class="nav-link"href="projects.html">Projects</a></li>
-    <li><a class="nav-link"href="contact.html">Contact</a></li>
-    <li><a class="nav-link"href="about.html">About</a></li>
-  </ul>
-</nav>
-<section id="contact"><strong>Contact details</strong><p>Email: address@hotmail.co.uk<br>
-   Phone:</p>
-   Email:<br> <!-- inline Javascript colour field box-->
-   <input type="text" size="30"
-   onFocus="this.style.backgroundColor = 'yellow';"
-   onBlur="this.style.backgroundColor = 'white';">
-   <!-- OR <input type="text" size="30" onFocus="makeFieldYellow();"
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,500;1,200&family=Dosis&display=swap"
+    rel="stylesheet">
+  <title>Portfolio page</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><a class="nav-link" href="index.html" onMouseover="this.style.color = 'green';">Welcome</a></li>
+      <!-- Javascript changing colour-->
+      <li><a class="nav-link" href="projects.html">Projects</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <section id="contact">
+    <h3><strong>Contact details</strong></h3>
+    <p>Email: address@hotmail.co.uk</p>
+    <p>Phone:</p>
+
+    <p><strong>Get in touch!</strong> </p>
+    <p>Write your message below:<br> <!-- inline Javascript colour field box-->
+      <input type="text" size="30" onFocus="this.style.backgroundColor = 'yellow';"
+        onBlur="this.style.backgroundColor = 'white';">
+      <!-- OR <input type="text" size="30" onFocus="makeFieldYellow();"
    onBlur="makeFieldWhite();">-->
 
-  <!--onSubmit Javascript-->
-   <form onSubmit="checkAddress('email');">
-     Email:
-     <input type="text" id="email">
-     <input type="submit" value="Submit">
-   </form>
-   <script>
-   function checkAddress(fieldId) {
-     if (document.getElementById(fieldId).value === "") {
-       alert("Email address required.");
-     }
-   }
-   </script>
-   <!-- setting field values-->
-   <form>
-   ZIP: <br>
-   <input type="text" id="zip" onBlur="fillCity();"><br>
-   City:<br>
-   <input type="text" id="city">
-   </form>
+      <!--onSubmit Javascript-->
+    <form onSubmit="checkAddress('email');">
+      Email:
+      <input type="text" id="email">
+      <input type="submit" value="Submit">
+    </form>
+    <script>
+      function checkAddress(fieldId) {
+        if (document.getElementById(fieldId).value === "") {
+          alert("Email address required.");
+        }
+      }
+    </script>
+    <!-- setting field values-->
+    <form>
+      ZIP: <br>
+      <input type="text" id="zip" onBlur="fillCity();"><br>
+      City:<br>
+      <input type="text" id="city">
+    </form>
 
-   <script>
-   function fillCity() {
-     var cityName;
-     var zipEntered = document.getElementById("zip").value;
-     switch (zipEntered) {
-       case "60608" :
-          cityName = "Chicago";
-          break;
-        case "68114" :
-          cityName = "Omaha";
-          break;
-        case "53212" :
-          cityName = "Milwaukee";
-     }
-     document.getElementById("city").value = cityName;
-   }
-   </script>
- </section>
- <footer id="footer">
-  Natalie &copy; 2020
- </footer>
-  </body>
+    <script>
+      function fillCity() {
+        var cityName;
+        var zipEntered = document.getElementById("zip").value;
+        switch (zipEntered) {
+          case "60608":
+            cityName = "Chicago";
+            break;
+          case "68114":
+            cityName = "Omaha";
+            break;
+          case "53212":
+            cityName = "Milwaukee";
+        }
+        document.getElementById("city").value = cityName;
+      }
+    </script>
+  </section>
+  <footer id="footer">
+    Natalie &copy; 2020
+  </footer>
+</body>
+
 </html>
